@@ -9,7 +9,6 @@ import NotFound from './components/NotFound'
 import RestaurantDetails from './components/RestaurantDetails'
 import ProtectedRoute from './components/ProtectedRoute'
 import CartContext from './context/CartContext'
-
 import './App.css'
 
 const getCartListFromLocalStorage = () => {

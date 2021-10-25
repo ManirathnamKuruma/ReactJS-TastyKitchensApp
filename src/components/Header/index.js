@@ -12,8 +12,8 @@ const Header = props => {
   }
 
   const {activeTab} = props
-  const activeHome = activeTab !== 'HOME' ? 'active' : ''
-  const activeCart = activeTab !== 'CART' ? 'active' : ''
+  const activeHome = activeTab !== 'CART' ? 'active' : ''
+  const activeCart = activeTab !== 'HOME' ? 'active' : ''
 
   return (
     <nav className="nav-header">
@@ -35,15 +35,16 @@ const Header = props => {
           <Link to="/cart" className={`nav-link ${activeCart}`}>
             <li>Cart</li>
           </Link>
+
+          <button
+            type="button"
+            className="logout-desktop-btn"
+            onClick={onClickLogout}
+            testid="logout-button"
+          >
+            logout
+          </button>
         </ul>
-        <button
-          type="button"
-          className="logout-desktop-btn"
-          onClick={onClickLogout}
-          testid="logout-button"
-        >
-          Logout
-        </button>
       </div>
     </nav>
   )

@@ -23,7 +23,7 @@ const CartItem = props => (
       return (
         <li className="cart-item">
           <img className="cart-product-image" src={imageUrl} alt={name} />
-          <div className="cart-item-details-container">
+          <div className="cart-item-details-container" testid="cartItem">
             <div className="cart-product-title-brand-container">
               <h1 className="cart-product-title">{name}</h1>
             </div>
@@ -49,16 +49,9 @@ const CartItem = props => (
               </button>
             </div>
             <div className="total-price-delete-container">
-              <p className="cart-total-price">
+              <p className="cart-total-price" testid="total-price">
                 <FaRupeeSign /> {cost * quantity}/-
               </p>
-              <button
-                className="remove-button"
-                type="button"
-                onClick={onDeleteCartItem}
-              >
-                Remove
-              </button>
             </div>
           </div>
           <button

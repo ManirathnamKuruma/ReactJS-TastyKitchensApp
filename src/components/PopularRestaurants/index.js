@@ -53,7 +53,6 @@ class PopularRestaurants extends Component {
     const response = await fetch(url, options)
     if (response.ok) {
       const fetchedData = await response.json()
-      console.log(fetchedData)
       const updatedData = fetchedData.restaurants.map(restaurant => ({
         costForTwo: restaurant.cost_for_two,
         cuisine: restaurant.cuisine,
@@ -141,7 +140,7 @@ class PopularRestaurants extends Component {
                 />
               ))}
             </ul>
-            <div className="pagination">
+            <div className="pagination" testid="active-page-number">
               <button
                 testid="pagination-left-button"
                 className="button"
@@ -150,9 +149,9 @@ class PopularRestaurants extends Component {
               >
                 <RiArrowDropLeftLine className="arrow" />
               </button>
-              <h1 testid="active-page-number" className="page-numbers">
-                . . . {activePage} . . .
-              </h1>
+              <div testid="active-page-number" className="page-numbers">
+                {activePage}
+              </div>
               <button
                 testid="pagination-right-button"
                 className="button"

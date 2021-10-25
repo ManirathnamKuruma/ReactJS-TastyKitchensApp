@@ -6,7 +6,7 @@ import {ImStarFull} from 'react-icons/im'
 
 const RestaurantCard = props => {
   const {restaurantData} = props
-  const {id, name, imageUrl, cuisine, userRating} = restaurantData
+  const {id, name, imageUrl, cuisine, userRating, opensAt} = restaurantData
 
   return (
     <Link to={`/restaurant/${id}`} className="restaurant-link-item">
@@ -19,6 +19,8 @@ const RestaurantCard = props => {
             <ImStarFull className="star" />
             <h1 className="rating">{userRating.rating}</h1>
           </div>
+          <p className="cuisine">({userRating.total_reviews} rating)</p>
+          <p className="cuisine">{opensAt}</p>
         </div>
       </li>
     </Link>

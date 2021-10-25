@@ -8,11 +8,13 @@
   padding: 40px;
   margin-left: 9%;
   background-color: #f9fbfe;
+  font-family: 'DM Sans';
 }
 .cart-headings-container {
   display: flex;
   padding-left: 70px;
   padding-right: 40px;
+  font-family: 'DM Sans';
 }
 .cart-headings {
   font-family: DM Sans;

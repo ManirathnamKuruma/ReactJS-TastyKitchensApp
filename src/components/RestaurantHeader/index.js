@@ -34,7 +34,7 @@ const RestaurantHeader = props => {
       </div>
       <div className="sort-by-container">
         <BsFilterLeft className="sort-by-icon" />
-        <p className="sort-by">Sort By {selectedSortByValue}</p>
+        <p className="sort-by">Sort By</p>
         <select
           className="sort-by-select"
           value={selectedSortByValue}

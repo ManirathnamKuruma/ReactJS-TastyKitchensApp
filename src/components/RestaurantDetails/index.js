@@ -56,6 +56,7 @@ class RestaurantDetails extends Component {
         imageUrl: eachFoodItem.image_url,
         name: eachFoodItem.name,
         rating: eachFoodItem.rating,
+        reviewCount: eachFoodItem.reviews_count,
       }))
       this.setState({
         restaurantData: updatedData,
@@ -66,7 +67,7 @@ class RestaurantDetails extends Component {
   }
 
   renderLoadingView = () => (
-    <div testid="restaurants-details-loader" className="carousel-loader">
+    <div testid="restaurant-details-loader" className="carousel-loader">
       <Loader type="TailSpin" color="#F7931E" height={50} width={50} />
     </div>
   )
@@ -106,7 +107,7 @@ class RestaurantDetails extends Component {
                         <FaStar className="rating-star" />
                         {rating}
                       </p>
-                      <h1 className="ratings-count">{reviewsCount}+ Ratings</h1>
+                      <p className="ratings-count">{reviewsCount}+ Ratings</p>
                     </div>
                     <hr className="vertical-line" />
                     <div>

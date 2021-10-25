@@ -19,8 +19,8 @@ const CartTotal = () => (
           <hr />
           <div className="cart-summary-container">
             <h1 className="order-total-value">Order Total:</h1>
-            <div className="total-container">
-              <p testid="total-price" className="total">
+            <div className="total-container" testid="total-price">
+              <p className="total">
                 <BiRupee /> {totalOrderCost}
               </p>
               <Link to="/payment">

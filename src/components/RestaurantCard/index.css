@@ -15,11 +15,12 @@
   flex-grow: 0;
   flex-shrink: 1;
   margin-right: 20px;
+  align-items: center;
 }
 
 .restaurant-image {
-  width: 280px;
-  height: 180px;
+  width: 200px;
+  height: 120px;
   border-radius: 8px;
   margin-right: 20px;
 }

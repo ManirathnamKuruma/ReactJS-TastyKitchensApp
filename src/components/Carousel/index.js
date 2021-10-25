@@ -40,7 +40,7 @@ class Carousel extends Component {
 
   renderCarouselList = () => {
     const settings = {
-      dots: false,
+      dots: true,
       infinite: true,
       speed: 1000,
       slidesToShow: 1,

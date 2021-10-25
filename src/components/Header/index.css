@@ -51,6 +51,7 @@
   flex: 1;
   list-style-type: none;
   margin-top: 0;
+  align-items: center;
   margin-bottom: 0;
 }
 
